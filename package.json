@@ -6,10 +6,15 @@
   "author": "SebQuenet <seb.quenet@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -28,7 +33,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "eslint ./components/** ./pages/** && jest ./components/ --config ./jest/jest.config.js"
+    "test": "eslint ./components/** ./pages/** ./features/** && jest ./components/ ./features/ --config ./jest/jest.config.js"
   }
 }
-
