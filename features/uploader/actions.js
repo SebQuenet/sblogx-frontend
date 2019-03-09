@@ -14,3 +14,13 @@ export const uploadFailed = (error) => ({
   type: types.UPLOAD_FAILED,
   payload: error,
 });
+
+export const statusSuccess = (data) => ({
+  type: types.STATUS_SUCCESS,
+  payload: data,
+});
+
+export const statusFailed = (error) => ({
+  type: types.STATUS_FAILED,
+  payload: error,
+});

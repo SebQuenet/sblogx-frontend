@@ -24,7 +24,7 @@ export default (status) => {
       style.color = '#9cffbc';
       break;
     case 'error':
-      style.color = '#ffc0c0';
+      style.color = 'red';
       break;
     default:
       style.color = '#9cffbc';

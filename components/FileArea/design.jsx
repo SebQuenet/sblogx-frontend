@@ -34,7 +34,7 @@ const FileArea = ({ status, uploadFile }) => {
       onDrop={onDrop(setFilename, uploadFile)}
     >
       {
-        status === 'error' ? 'Error'
+        status === 'error' ? 'Erreur de téléversement ou de récupération du nombre de fichiers'
           : fileName === '' ? 'Zone de dépot'
             : fileName
        }
