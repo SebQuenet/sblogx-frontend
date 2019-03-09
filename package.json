@@ -1,0 +1,34 @@
+{
+  "name": "sblogx-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:SebQuenet/sblogx-frontend.git",
+  "author": "SebQuenet <seb.quenet@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.3.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "eslint ./components/** ./pages/** && jest ./components/ --config ./jest/jest.config.js"
+  }
+}
+
