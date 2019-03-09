@@ -1,14 +1,15 @@
 import { combineReducers } from 'redux';
 import { call, all } from 'redux-saga/effects';
 
-export const rootReducer = combineReducers({ dummyReducer: () => ({}) });
+import uploaderReducer, { uploaderSagas } from './uploader';
 
-function* dummySaga() {
-  yield (42);
-}
+
+export const rootReducer = combineReducers({
+  uploaderReducer,
+});
 
 export function* rootSaga() {
   yield all([
-    call(dummySaga),
+    call(uploaderSagas),
   ]);
 }

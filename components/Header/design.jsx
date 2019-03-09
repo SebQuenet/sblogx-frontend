@@ -3,14 +3,14 @@ import t from 'prop-types';
 
 import style from './style';
 
-const FileArea = ({ content }) => (
+const Header = ({ content }) => (
   <div style={style()}>
     {content}
   </div>
 );
 
-FileArea.propTypes = {
+Header.propTypes = {
   content: t.string.isRequired,
 };
 
-export default FileArea;
+export default Header;

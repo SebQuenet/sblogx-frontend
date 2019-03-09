@@ -22,6 +22,7 @@ module.exports = {
     "react/react-in-jsx-scope": 1,
     "no-underscore-dangle": ["error", { allow: ["_id"] }],
     "arrow-parens": 0,
+    "no-nested-ternary": 0,
   },
   globals: {'shallow': 1, 'mount':1, 'render':1},
 };
